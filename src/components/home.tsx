@@ -1,6 +1,7 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import Header from "./landing/Header";
+import Footer from "./landing/Footer";
 import HeroSection from "./landing/HeroSection";
 import ServicesSection from "./landing/ServicesSection";
 import BenefitsSection from "./landing/BenefitsSection";
@@ -53,11 +54,14 @@ const Home = () => {
               className="text-lg px-8 py-6"
               onClick={() => navigate("/contact")}
             >
-              Lets Talk
+              Schedule Your Free Consultation
             </Button>
           </div>
         </section>
       </main>
+
+      {/* Footer */}
+      <Footer />
     </div>
   );
 };
