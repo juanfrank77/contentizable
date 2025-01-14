@@ -1,16 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import App from "./App.tsx";
+import { HydratedRouter } from "react-router/dom";
 import "./index.css";
-import { BrowserRouter } from "react-router";
 
 const basename = import.meta.env.BASE_URL;
 
-ReactDOM.createRoot(document.getElementById("root")!).render(
+ReactDOM.hydrateRoot(
+  document,
   <React.StrictMode>
-    <BrowserRouter basename={basename}>
-      <App />
+    {/*     <BrowserRouter basename={basename}>
       <div className="w-[800px] h-[600px]"></div>
-    </BrowserRouter>
+    </BrowserRouter> */}
+    <HydratedRouter />
   </React.StrictMode>,
 );
