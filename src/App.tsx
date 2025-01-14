@@ -2,7 +2,6 @@ import { Suspense } from "react";
 import { useRoutes, Routes, Route } from "react-router";
 import Home from "./components/home";
 import Contact from "./components/landing/Contact";
-import routes from "tempo-routes";
 
 function App() {
   return (
@@ -12,7 +11,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        {import.meta.env.VITE_TEMPO === "true" && useRoutes(routes)}
       </>
     </Suspense>
   );
