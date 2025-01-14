@@ -1,5 +1,5 @@
 import React from "react";
-import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router";
 import Header from "./landing/Header";
 import Footer from "./landing/Footer";
 import HeroSection from "./landing/HeroSection";
