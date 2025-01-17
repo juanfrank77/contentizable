@@ -12,11 +12,7 @@ export const links: LinksFunction = () => [
     { rel: "stylesheet", href: styles },
 ];
 
-export function Layout({
-    children,
-}: {
-    children: React.ReactNode;
-}) {
+export function Layout({ children }: { children: React.ReactNode }) {
     return (
         <html lang="en">
             <head>
