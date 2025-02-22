@@ -30,3 +30,5 @@ node_modules
 # Ignore lock files
 yarn.lock
 pnpm-lock.yaml
+
+*storybook.log
